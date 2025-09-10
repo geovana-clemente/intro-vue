@@ -23,15 +23,48 @@
 //import Exemplo09Enviar from './components/Exemplo09Enviar.vue';
 //import Exemplo10Props from './components/Exemplo10Props.vue';
 
-//const user = {
-  //name: String, 
+//  const user = {
+//   name: String, 
 //  email: String, 
-//  idade: Number,
-  //telefone: String,
-  //ativo: Boolean, 
+// idade: Number,
+// telefone: String,
+// ativo: Boolean, 
+// }
+
+// import Exercicio11ProductCard from './components/Exercicios/Exercicio1.1-ProductCard.vue';
+
+// import {ref} from 'vue'
+// import Exemplo11Emits from './components/Exemplo11Emits.vue';
+// const totalCliques = ref(0); 
+
+// function atualizarTotalCliques(valor){
+  // totalCliques.value = valor; 
+// }
+
+
+import Navbar from './components/Exercicios/Navbar.vue'
+import NavItem from './components/Exercicios/NavItem.vue'
+//import MyComponent from './components/Exercicios/MyComponent.vue';
+//import ParentComponent from './components/Exercicios/ParentComponent.vue';
+
+
+//import { ref } from 'vue'
+//import Exercicio21CompradeProduto from './components/Exercicios/Exercicio2.1-CompradeProduto.vue'
+
+//const produtos = ref([
+    //{ nome: 'Batom Matte', price: 29.9 },
+   // { nome: 'Blush em Pó', price: 59.9 },
+   // { nome: 'Rímel Volume', price: 39.9 }
+//])
+
+//const mensagemCompra = ref('')
+
+//function handleBuy(nomeProduto) {
+  //  const msg = `Você comprou ${nomeProduto}`
+   // mensagemCompra.value = msg
+   // console.log(msg)
 //}
 
-import Exercicio11ProductCard from './components/Exercicios/Exercicio1.1-ProductCard.vue';
 
 </script>
 
@@ -66,12 +99,42 @@ import Exercicio11ProductCard from './components/Exercicios/Exercicio1.1-Product
     :ativo="true" 
   ></Exemplo10Props> -->
 
-  <Exercicio11ProductCard 
-    title="Smartphone Samsung Galaxy S21" 
-    :price="3999.99" 
-    image="https://samsungbrshop.vtexassets.com/arquivos/ids/222466/image-147812a827ce414cbeecb5bb91eecb25-1-.jpg?v=638315272752900000" 
-    :inStock="true"
-  ></Exercicio11ProductCard>
+  <!-- <Exercicio11ProductCard  --> 
+    <!-- title="Smartphone Samsung Galaxy S21"  -->
+    <!-- :price="3999.99"  -->
+    <!-- image="https://samsungbrshop.vtexassets.com/arquivos/ids/222466/image-147812a827ce414cbeecb5bb91eecb25-1-.jpg?v=638315272752900000"  -->
+    <!-- :inStock="true" -->
+  <!-- ></Exercicio11ProductCard>  -->
+
+  <!-- <Exemplo11Emits @update="atualizarTotalCliques"></Exemplo11Emits>  -->
+    <!-- <P>Total de cliques: {{ totalCliques }}</P> --> 
+<!-- <Exercicio21CompradeProduto> -->
+   <!-- <h2>Produtos</h2> -->
+    <!-- <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+        <ProdutoCard
+            v-for="(produto, i) in produtos"
+            :key="produto.nome + i"
+            :nome="produto.nome"
+            :price="produto.price"
+            @buy="handleBuy"
+        />
+    </div>
+    <p v-if="mensagemCompra" style="font-weight: bold; color: #e0aaff; margin-top: 1rem;">{{ mensagemCompra }}</p>
+</Exercicio21CompradeProduto>  -->
+<ExercicioNavbar> </ExercicioNavbar>
+  <Navbar>
+    <NavItem>Home</NavItem>
+    <NavItem>Sobre</NavItem>
+    <NavItem>Contato</NavItem>
+  </Navbar>
+
+
+
+
+
+
+
+
 
 
 
